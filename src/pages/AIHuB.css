@@ -1,0 +1,555 @@
+/* =========================
+   AI HUB
+========================= */
+
+.aihub {
+  min-height: 100vh;
+  background: #0b0b0b;
+  color: #f4f1e8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.aihub-nav {
+  height: 78px;
+  padding: 0 6vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aihub-logo {
+  color: #f4f1e8;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.aihub-logo span {
+  color: #d8ff45;
+}
+
+.aihub-nav-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #8d8d8d;
+}
+
+.aihub-back {
+  color: #f4f1e8;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.aihub-back:hover {
+  color: #d8ff45;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.aihub-hero {
+  min-height: 650px;
+  padding: 130px 6vw 110px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.aihub-hero::before {
+  content: "";
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  background: #d8ff45;
+  opacity: 0.035;
+
+  border-radius: 50%;
+  filter: blur(120px);
+
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  pointer-events: none;
+}
+
+.aihub-eyebrow {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #9c9c9c;
+}
+
+.aihub-eyebrow span {
+  width: 7px;
+  height: 7px;
+  background: #d8ff45;
+  border-radius: 50%;
+}
+
+.aihub-hero h1 {
+  position: relative;
+
+  margin: 30px 0 25px;
+
+  font-size: clamp(55px, 8vw, 110px);
+  line-height: 0.9;
+  letter-spacing: -5px;
+  font-weight: 800;
+}
+
+.aihub-hero h1 em {
+  color: #d8ff45;
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.aihub-hero > p {
+  position: relative;
+
+  max-width: 600px;
+
+  color: #999;
+  font-size: 17px;
+  line-height: 1.7;
+
+  margin-bottom: 55px;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.aihub-search-wrapper {
+  width: min(850px, 100%);
+  position: relative;
+  z-index: 2;
+}
+
+.aihub-search {
+  width: 100%;
+  min-height: 76px;
+
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  background: #111;
+
+  display: flex;
+  align-items: center;
+
+  padding: 8px;
+
+  transition: border 0.25s ease;
+}
+
+.aihub-search:focus-within {
+  border-color: rgba(216, 255, 69, 0.6);
+}
+
+.search-icon {
+  font-size: 28px;
+  color: #777;
+  padding: 0 18px;
+}
+
+.aihub-search input {
+  flex: 1;
+
+  height: 58px;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: #fff;
+  font-size: 15px;
+}
+
+.aihub-search input::placeholder {
+  color: #666;
+}
+
+.aihub-search button {
+  height: 58px;
+
+  padding: 0 25px;
+
+  border: none;
+  background: #d8ff45;
+  color: #090909;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+.aihub-search button:hover {
+  transform: translateY(-2px);
+}
+
+.aihub-search button span {
+  margin-left: 8px;
+}
+
+.search-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 18px;
+
+  color: #666;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   RESULTS
+========================= */
+
+.aihub-results {
+  width: min(1050px, 88%);
+  margin: 0 auto 120px;
+}
+
+.result-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  margin-bottom: 25px;
+}
+
+.result-label {
+  color: #d8ff45;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.result-heading h2 {
+  font-size: 42px;
+  margin: 10px 0 0;
+  letter-spacing: -2px;
+}
+
+.result-status {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #d8ff45;
+  border: 1px solid rgba(216, 255, 69, 0.4);
+  padding: 8px 12px;
+}
+
+/* =========================
+   RESULT CARD
+========================= */
+
+.result-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #101010;
+
+  padding: 32px;
+
+  margin-bottom: 15px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+
+  color: #666;
+
+  font-size: 10px;
+  letter-spacing: 2px;
+
+  margin-bottom: 25px;
+}
+
+.card-top span:first-child {
+  color: #d8ff45;
+}
+
+.result-card h3 {
+  font-size: 25px;
+  margin: 0 0 12px;
+}
+
+.result-card p {
+  color: #929292;
+  line-height: 1.7;
+}
+
+/* =========================
+   PROMPT
+========================= */
+
+.prompt-box {
+  background: #080808;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  padding: 24px;
+
+  color: #c4c4c4;
+  font-size: 14px;
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+}
+
+.copy-button,
+.copy-all {
+  border: 1px solid rgba(216, 255, 69, 0.4);
+  background: transparent;
+  color: #d8ff45;
+
+  padding: 13px 18px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  cursor: pointer;
+}
+
+.copy-button:hover,
+.copy-all:hover {
+  background: #d8ff45;
+  color: #090909;
+}
+
+/* =========================
+   GUIDE
+========================= */
+
+.guide-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.guide-list > div {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+
+  display: flex;
+  gap: 15px;
+}
+
+.guide-list span {
+  color: #d8ff45;
+  font-size: 11px;
+}
+
+.guide-list p {
+  margin: 0;
+}
+
+/* =========================
+   SCENES
+========================= */
+
+.scene-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.scene {
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.scene > span {
+  color: #d8ff45;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.scene h3 {
+  font-size: 20px;
+  margin: 12px 0 5px;
+}
+
+.scene p {
+  margin: 0;
+}
+
+/* =========================
+   EDITING
+========================= */
+
+.editing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.editing-grid > div {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.editing-grid span {
+  color: #666;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.editing-grid strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.copy-all {
+  width: 100%;
+  padding: 18px;
+  margin-top: 5px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.aihub-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  padding: 30px 6vw;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #666;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .aihub-nav {
+    padding: 0 20px;
+  }
+
+  .aihub-nav-label {
+    display: none;
+  }
+
+  .aihub-back {
+    font-size: 11px;
+  }
+
+  .aihub-hero {
+    padding: 100px 20px 80px;
+  }
+
+  .aihub-hero h1 {
+    font-size: 58px;
+    letter-spacing: -3px;
+  }
+
+  .aihub-hero > p {
+    font-size: 15px;
+  }
+
+  .aihub-search {
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .search-icon {
+    display: none;
+  }
+
+  .aihub-search input {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .aihub-search button {
+    width: 100%;
+  }
+
+  .search-options {
+    flex-wrap: wrap;
+  }
+
+  .aihub-results {
+    width: calc(100% - 30px);
+  }
+
+  .result-heading {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .result-heading h2 {
+    font-size: 30px;
+  }
+
+  .result-card {
+    padding: 22px;
+  }
+
+  .guide-list,
+  .scene-grid,
+  .editing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aihub-footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+.aihub-error {
+  margin-top: 20px;
+  padding: 14px 18px;
+
+  border: 1px solid rgba(255, 80, 80, 0.3);
+  background: rgba(255, 80, 80, 0.05);
+
+  color: #ff8a8a;
+
+  font-size: 12px;
+  text-align: left;
+}
+
+.aihub-search button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}

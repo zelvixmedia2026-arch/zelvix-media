@@ -1,0 +1,253 @@
+[
+  {
+    "reel_url": "https://www.instagram.com/reel/ABC123/",
+    "title": "Cinematic Hotel Advertisement",
+    "concept": "A cinematic luxury hotel advertisement focused on atmosphere, architecture and premium visual storytelling.",
+    "image_prompt": "Create a cinematic luxury hotel scene with sophisticated modern architecture, warm ambient lighting, premium interiors, realistic materials, natural shadows, elegant composition, cinematic depth of field, high-end commercial photography, ultra realistic details, 4K.",
+    "video_prompt": "Create a cinematic luxury hotel advertisement with slow smooth camera movement, realistic environmental motion, premium lighting, natural depth and elegant commercial visual storytelling.",
+    "motion_guide": [
+      "Slow cinematic camera push",
+      "Subtle environmental movement",
+      "Smooth camera transitions",
+      "Slow final reveal"
+    ],
+    "scene_guide": [
+      {
+        "scene": "01",
+        "title": "Opening",
+        "description": "Establish the hotel location with a wide cinematic shot."
+      },
+      {
+        "scene": "02",
+        "title": "Reveal",
+        "description": "Move toward the main subject using a smooth camera movement."
+      },
+      {
+        "scene": "03",
+        "title": "Details",
+        "description": "Show premium architectural and interior details."
+      },
+      {
+        "scene": "04",
+        "title": "Final Shot",
+        "description": "Finish with a strong cinematic reveal and branding."
+      }
+    ],
+    "editing_guide": {
+      "transitions": "Clean cinematic transitions",
+      "text": "Minimal typography",
+      "sfx": "Soft whoosh + atmospheric sound",
+      "color": "Warm cinematic grade"
+    }
+  },
+
+  {
+    "reel_url": "https://www.instagram.com/reel/XYZ456/",
+    "title": "Luxury Car Advertisement",
+    "concept": "A premium automotive advertisement showcasing a luxury car through dramatic cinematic visuals.",
+    "image_prompt": "Create an ultra realistic luxury car parked on a dramatic modern road at night, cinematic reflections, premium studio-quality lighting, wet asphalt, atmospheric environment, realistic materials, dramatic composition, shallow depth of field, automotive commercial photography, 4K.",
+    "video_prompt": "Create a premium automotive commercial with slow cinematic camera movements around the vehicle, dramatic lighting changes, realistic reflections and smooth professional camera transitions.",
+    "motion_guide": [
+      "Slow orbit around the car",
+      "Low-angle camera movement",
+      "Smooth push-in toward headlights",
+      "Slow final reveal"
+    ],
+    "scene_guide": [
+      {
+        "scene": "01",
+        "title": "Dark Opening",
+        "description": "Begin with a dark cinematic environment and reveal the vehicle silhouette."
+      },
+      {
+        "scene": "02",
+        "title": "Front Reveal",
+        "description": "Slowly reveal the headlights and front design."
+      },
+      {
+        "scene": "03",
+        "title": "Side Profile",
+        "description": "Move smoothly along the side of the vehicle."
+      },
+      {
+        "scene": "04",
+        "title": "Hero Shot",
+        "description": "Finish with a powerful wide shot of the complete vehicle."
+      }
+    ],
+    "editing_guide": {
+      "transitions": "Fast clean cinematic cuts",
+      "text": "Bold minimal typography",
+      "sfx": "Deep impact + subtle whoosh",
+      "color": "Dark high-contrast cinematic grade"
+    }
+  },
+
+  {
+    "reel_url": "https://www.instagram.com/reel/DEF789/",
+    "title": "Travel Destination Reel",
+    "concept": "A cinematic travel reel designed to showcase a destination through beautiful landscapes and smooth camera movements.",
+    "image_prompt": "Create a breathtaking tropical travel destination with crystal-clear water, mountains, lush greenery, warm natural sunlight, realistic atmosphere, cinematic composition, detailed environment, premium travel photography, ultra realistic 4K.",
+    "video_prompt": "Create a cinematic travel advertisement showing a beautiful tropical destination with smooth drone-style camera movement, natural environmental motion, realistic water movement and warm sunlight.",
+    "motion_guide": [
+      "Slow aerial camera movement",
+      "Smooth forward push",
+      "Gentle landscape pan",
+      "Slow transition between locations"
+    ],
+    "scene_guide": [
+      {
+        "scene": "01",
+        "title": "Aerial Opening",
+        "description": "Start with a wide aerial view of the destination."
+      },
+      {
+        "scene": "02",
+        "title": "Landscape",
+        "description": "Move toward the landscape and reveal environmental details."
+      },
+      {
+        "scene": "03",
+        "title": "Experience",
+        "description": "Show the destination from a closer immersive perspective."
+      },
+      {
+        "scene": "04",
+        "title": "Final View",
+        "description": "End with a wide cinematic destination shot."
+      }
+    ],
+    "editing_guide": {
+      "transitions": "Smooth cinematic dissolves",
+      "text": "Elegant travel typography",
+      "sfx": "Ambient nature + soft whoosh",
+      "color": "Warm vibrant travel grade"
+    }
+  },
+
+  {
+    "reel_url": "https://www.instagram.com/reel/GHI012/",
+    "title": "EV Scooter Advertisement",
+    "concept": "A modern electric scooter advertisement focused on technology, clean design and energetic urban mobility.",
+    "image_prompt": "Create a futuristic electric scooter in a premium modern urban environment, clean architecture, dramatic evening lighting, realistic reflections, cinematic shadows, sleek product design, commercial advertising photography, ultra realistic 4K.",
+    "video_prompt": "Create a modern electric scooter commercial with smooth tracking shots, dynamic camera movement, realistic urban environment motion and premium product-focused cinematography.",
+    "motion_guide": [
+      "Low-angle tracking shot",
+      "Smooth side tracking",
+      "Slow product rotation",
+      "Dynamic final push-in"
+    ],
+    "scene_guide": [
+      {
+        "scene": "01",
+        "title": "Product Introduction",
+        "description": "Reveal the scooter using a dramatic low-angle shot."
+      },
+      {
+        "scene": "02",
+        "title": "Movement",
+        "description": "Show the scooter moving through a modern urban environment."
+      },
+      {
+        "scene": "03",
+        "title": "Detail Shots",
+        "description": "Highlight the design, lights and important product details."
+      },
+      {
+        "scene": "04",
+        "title": "Hero Frame",
+        "description": "End with the scooter centered in a premium cinematic composition."
+      }
+    ],
+    "editing_guide": {
+      "transitions": "Quick clean motion transitions",
+      "text": "Bold modern typography",
+      "sfx": "Electric hum + impact hits",
+      "color": "Cool modern commercial grade"
+    }
+  },
+
+  {
+    "reel_url": "https://www.instagram.com/reel/JKL345/",
+    "title": "Food Advertisement",
+    "concept": "A high-end food advertisement using close-up shots, dramatic lighting and appetizing product presentation.",
+    "image_prompt": "Create a premium food advertisement featuring a beautifully presented dish, dramatic studio lighting, realistic textures, subtle steam, detailed ingredients, shallow depth of field, dark elegant background, high-end commercial food photography, ultra realistic 4K.",
+    "video_prompt": "Create a cinematic food commercial with macro close-ups, slow camera movements, realistic steam and ingredient movement, dramatic lighting and premium commercial presentation.",
+    "motion_guide": [
+      "Slow macro push-in",
+      "Gentle camera orbit",
+      "Subtle steam movement",
+      "Slow-motion ingredient reveal"
+    ],
+    "scene_guide": [
+      {
+        "scene": "01",
+        "title": "Dark Opening",
+        "description": "Reveal the dish gradually from a dark background."
+      },
+      {
+        "scene": "02",
+        "title": "Macro Detail",
+        "description": "Show close-up details of the food texture."
+      },
+      {
+        "scene": "03",
+        "title": "Ingredient Shot",
+        "description": "Highlight fresh ingredients and preparation details."
+      },
+      {
+        "scene": "04",
+        "title": "Final Product",
+        "description": "Show the complete dish in a premium hero composition."
+      }
+    ],
+    "editing_guide": {
+      "transitions": "Smooth macro cuts",
+      "text": "Minimal premium typography",
+      "sfx": "Soft food ambience + subtle impacts",
+      "color": "Warm cinematic food grade"
+    }
+  },
+
+  {
+    "reel_url": "https://www.instagram.com/reel/MNO678/",
+    "title": "Tech Product Advertisement",
+    "concept": "A futuristic technology advertisement presenting a product with clean visuals, dramatic lighting and modern motion graphics.",
+    "image_prompt": "Create a futuristic premium technology product displayed in a dark minimal studio, dramatic rim lighting, realistic reflections, sleek surfaces, subtle atmospheric haze, sophisticated composition, high-end technology commercial photography, ultra realistic 4K.",
+    "video_prompt": "Create a futuristic technology commercial with smooth product rotations, controlled camera movement, glowing highlights, subtle particles and premium motion-design aesthetics.",
+    "motion_guide": [
+      "Slow product rotation",
+      "Controlled camera push",
+      "Subtle floating particles",
+      "Smooth final zoom"
+    ],
+    "scene_guide": [
+      {
+        "scene": "01",
+        "title": "Mystery Opening",
+        "description": "Begin with a dark frame and reveal part of the product."
+      },
+      {
+        "scene": "02",
+        "title": "Product Reveal",
+        "description": "Gradually reveal the complete product with controlled lighting."
+      },
+      {
+        "scene": "03",
+        "title": "Feature Detail",
+        "description": "Focus on important design and technology details."
+      },
+      {
+        "scene": "04",
+        "title": "Final Hero",
+        "description": "Finish with a clean premium product hero shot."
+      }
+    ],
+    "editing_guide": {
+      "transitions": "Minimal motion-graphic transitions",
+      "text": "Clean futuristic typography",
+      "sfx": "Digital whoosh + subtle electronic impacts",
+      "color": "Dark futuristic cinematic grade"
+    }
+  }
+]
