@@ -18,18 +18,17 @@ function AIHub() {
     setResult(null);
 
     try {
-      const response = await fetch(
-        "http://127.0.0.1:8000/api/analyze",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            url: reelLink,
-          }),
-        }
-      );
+      
+const response = await fetch("/api/analyze", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    url: reelLink,
+  }),
+});
+
 
       const data = await response.json();
 
