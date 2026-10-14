@@ -1,7 +1,19 @@
+
 import "./App.css";
+import ClientPortal from "./pages/ClientPortal";
+import AIHub from "./pages/AIHub";
 
 function App() {
+  if (window.location.pathname === "/client-portal") {
+    return <ClientPortal />;
+  }
+
+  if (window.location.pathname === "/ai-hub") {
+    return <AIHub />;
+  }
+
   return (
+
     <div className="site">
 
       {/* =========================
@@ -21,6 +33,7 @@ function App() {
             <a href="#approach">Approach</a>
             <a href="#ai-hub">AI Hub</a>
             <a href="#websites">Websites</a>
+            <a href="/client-portal">Client Portal ↗</a>
           </nav>
 
           <div className="nav-socials">
