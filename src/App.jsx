@@ -20,6 +20,7 @@ function App() {
             <a href="#services">Services</a>
             <a href="#approach">Approach</a>
             <a href="#ai-hub">AI Hub</a>
+            <a href="#websites">Websites</a>
           </nav>
 
           <div className="nav-socials">
@@ -345,6 +346,74 @@ function App() {
           </div>
 
         </section>
+
+        {/* =========================
+    WEBSITE DEVELOPMENT
+========================= */}
+
+<section className="website-offer section" id="websites">
+  <div className="website-offer-grid"></div>
+
+  <div className="section-label">
+    <span>03</span>
+    WEBSITE DEVELOPMENT
+  </div>
+
+  <div className="website-offer-content">
+    <div className="website-offer-text">
+      <div className="website-offer-badge">
+        YOUR BUSINESS. YOUR WEBSITE.
+      </div>
+
+      <h2>
+        Build a website
+        <br />
+        for your <em>business.</em>
+      </h2>
+
+      <p>
+        Take your business online with a modern, responsive website
+        designed to showcase your brand, services and business
+        professionally.
+      </p>
+
+      <div className="website-offer-features">
+        <span>✦ Modern Design</span>
+        <span>✦ Mobile Responsive</span>
+        <span>✦ Business Focused</span>
+      </div>
+
+      <a href="#contact" className="website-offer-button">
+        Build My Website <span>↗</span>
+      </a>
+    </div>
+
+    <div className="website-price-card">
+      <span className="website-price-label">
+        WEBSITE DEVELOPMENT
+      </span>
+
+      <div className="website-price">
+        <span className="currency">₹</span>4,999
+        <span className="price-plus">/-</span>
+      </div>
+
+      <span className="website-price-note">
+        STARTING PRICE
+      </span>
+
+      <div className="website-price-divider"></div>
+
+      <p>
+        A professional online presence starts here.
+      </p>
+
+      <span className="website-price-footer">
+        DOMAIN & HOSTING EXTRA
+      </span>
+    </div>
+  </div>
+</section>
 
 
         {/* =========================
