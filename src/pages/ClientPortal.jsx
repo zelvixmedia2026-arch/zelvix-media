@@ -1,20 +1,33 @@
 
 import { useState } from "react";
 import "./ClientPortal.css";
+import clients from "../data/clients";
 
 export default function ClientPortal() {
   const [pin, setPin] = useState("");
   const [error, setError] = useState("");
+  const [clientData, setClientData] = useState(null);
 
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (!pin.trim()) {
+    const enteredPin = pin.trim();
+
+    if (!enteredPin) {
       setError("Please enter your client PIN.");
+      setClientData(null);
       return;
     }
 
-    setError("The download service is not connected yet. Please try again later.");
+    const client = clients[enteredPin];
+
+    if (client) {
+      setClientData(client);
+      setError("");
+    } else {
+      setClientData(null);
+      setError("Invalid PIN. Please check and try again.");
+    }
   }
 
   return (
@@ -55,16 +68,59 @@ export default function ClientPortal() {
             onChange={(event) => {
               setPin(event.target.value);
               setError("");
+              setClientData(null);
             }}
             placeholder="Enter your PIN"
             autoComplete="off"
             required
           />
 
-          <button type="submit">Access my videos <span>↗</span></button>
+          <button type="submit">
+            Access my videos <span>↗</span>
+          </button>
 
-          {error && <p className="portal-error" role="alert">{error}</p>}
+          {error && (
+            <p className="portal-error" role="alert">
+              {error}
+            </p>
+          )}
         </form>
+
+        {clientData && (
+          <section className="client-results">
+            <h2>Welcome, {clientData.clientName}!</h2>
+            <p>Your videos are ready.</p>
+
+            {clientData.videos.map((video) => (
+              <article className="client-video-card" key={video.videoNumber}>
+                <p>VIDEO NO. {video.videoNumber}</p>
+                <h3>{video.title}</h3>
+                <p>{video.description}</p>
+
+                {video.videoUrl.startsWith("https://") &&
+                !video.videoUrl.includes("PASTE_BLOB_VIDEO_URL_HERE") ? (
+                  <>
+                    <video
+                      controls
+                      preload="metadata"
+                      width="100%"
+                      src={video.videoUrl}
+                    />
+                    <a
+                      href={video.videoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Open / Download Video ↗
+                    </a>
+                  </>
+                ) : (
+                  <p>Video upload is pending. Please check back soon.</p>
+                )}
+              </article>
+            ))}
+          </section>
+        )}
 
         <p className="portal-help">
           Don't have your PIN? Contact Zelvix Media to get access.
