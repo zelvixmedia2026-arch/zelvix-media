@@ -1212,3 +1212,448 @@ h2 em {
     font-size: 52px;
   }
 }
+
+
+/* =========================
+   ZELVIX MOBILE IMPROVEMENTS
+   Add at the bottom of App.css
+========================= */
+
+html {
+  scroll-padding-top: 80px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.site,
+main {
+  min-width: 0;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  /* HERO */
+  .hero {
+    min-height: 100svh;
+    min-height: 100vh;
+    padding: 125px 20px 105px;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .eyebrow,
+  .section-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .hero h1 {
+    font-size: clamp(54px, 13.5vw, 72px);
+    letter-spacing: -3.5px;
+    line-height: 0.94;
+  }
+
+  .hero-description {
+    margin: 28px 0 25px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .hero-actions .button {
+    justify-content: center;
+    min-height: 48px;
+  }
+
+  .hero-bottom {
+    bottom: 20px;
+    width: calc(100% - 40px);
+    gap: 12px 18px;
+    justify-content: flex-start;
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    width: calc(100% - 40px);
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .about-content,
+  .why-grid {
+    padding-top: 45px;
+    gap: 30px;
+  }
+
+  .about h2,
+  .section-heading h2,
+  .approach-top h2,
+  .why-intro h2,
+  .ai-content h2,
+  .contact h2 {
+    font-size: clamp(39px, 10vw, 48px);
+    letter-spacing: -2px;
+    line-height: 1.05;
+  }
+
+  .about-text p {
+    font-size: 15px;
+  }
+
+  /* SERVICES */
+  .services {
+    padding-top: 50px;
+  }
+
+  .section-heading {
+    padding: 45px 0 30px;
+  }
+
+  .services-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .service-card {
+    min-height: 0;
+    padding: 28px 24px;
+  }
+
+  .service-icon {
+    margin-bottom: 35px;
+  }
+
+  .service-card p {
+    padding-bottom: 20px;
+  }
+
+  /* WEBSITE OFFER */
+  .website-offer {
+    padding-top: 65px;
+    padding-bottom: 75px;
+  }
+
+  .website-offer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    padding-top: 35px;
+  }
+
+  .website-offer-content h2 {
+    font-size: clamp(38px, 10vw, 46px);
+    letter-spacing: -2px;
+    overflow-wrap: anywhere;
+  }
+
+  .website-offer-text > p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .website-offer-features {
+    gap: 8px;
+  }
+
+  .website-offer-features span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .website-offer-button {
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  .website-price-card {
+    width: 100%;
+    min-width: 0;
+    padding: 22px 18px;
+  }
+
+  .website-price {
+    font-size: clamp(40px, 12vw, 52px);
+    letter-spacing: -2px;
+  }
+
+  /* APPROACH */
+  .approach-top {
+    padding: 45px 0 50px;
+  }
+
+  .process {
+    gap: 24px;
+  }
+
+  .process-item h3 {
+    margin-top: 16px;
+  }
+
+  /* WHY ZELVIX */
+  .why-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .why-item {
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  /* AI HUB */
+  .ai-content {
+    padding-top: 45px;
+  }
+
+  .ai-badge {
+    margin-bottom: 25px;
+    letter-spacing: 1.5px;
+  }
+
+  .ai-content p {
+    font-size: 14px;
+  }
+
+  .ai-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    padding: 17px 18px;
+    gap: 15px;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 85px 0;
+  }
+
+  .contact h2 {
+    margin-top: 30px;
+  }
+
+  .contact p {
+    font-size: 14px;
+  }
+
+  .contact-email a {
+    overflow-wrap: anywhere;
+  }
+
+  .contact-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-button {
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 12px;
+    padding: 17px;
+  }
+
+  /* FOOTER */
+  .footer {
+    width: 100%;
+    padding: 45px 20px 25px;
+  }
+
+  .footer-top {
+    gap: 35px;
+    padding-bottom: 35px;
+  }
+
+  .footer-links {
+    gap: 30px;
+  }
+
+  .footer-column {
+    min-width: 0;
+  }
+
+  .footer-bottom {
+    gap: 12px;
+    margin-top: 30px;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 380px) {
+  .nav-inner {
+    width: calc(100% - 24px);
+  }
+
+  .logo {
+    font-size: 17px;
+    letter-spacing: -0.5px;
+  }
+
+  .nav-socials {
+    gap: 4px;
+  }
+
+  .nav-social {
+    padding: 8px 6px;
+    font-size: 8px;
+  }
+
+  .hero {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+    letter-spacing: -3px;
+  }
+
+  .hero-bottom {
+    width: calc(100% - 32px);
+    gap: 10px;
+    font-size: 8px;
+  }
+
+  .section {
+    width: calc(100% - 32px);
+  }
+
+  .website-price {
+    font-size: 39px;
+  }
+
+  .footer-links {
+    gap: 22px;
+  }
+}
+
+
+
+/* MOBILE NAVIGATION MENU */
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .nav-inner {
+    position: relative;
+    height: 70px;
+    width: calc(100% - 32px);
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border: 1px solid #383838;
+    border-radius: 50%;
+    background: #151515;
+    cursor: pointer;
+    z-index: 102;
+  }
+
+  .mobile-menu-toggle span {
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin: 0 auto;
+    background: var(--yellow);
+    transition: transform 0.2s ease;
+  }
+
+  .mobile-menu-toggle.is-open span:first-child {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .mobile-menu-toggle.is-open span:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 14px;
+    flex-direction: column;
+    gap: 0;
+    background: #111;
+    border: 1px solid #303030;
+    border-radius: 12px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+    z-index: 101;
+  }
+
+  .nav-links.mobile-open {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 14px 10px;
+    border-bottom: 1px solid #252525;
+    font-size: 14px;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: 0;
+    color: var(--yellow);
+  }
+
+  .nav-socials {
+    margin-left: auto;
+    margin-right: 12px;
+    gap: 5px;
+  }
+
+  .nav-social {
+    padding: 8px 7px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-inner {
+    width: calc(100% - 20px);
+  }
+
+  .logo {
+    font-size: 15px;
+    letter-spacing: -0.5px;
+  }
+
+  .nav-socials {
+    margin-right: 8px;
+    gap: 4px;
+  }
+
+  .nav-social {
+    padding: 7px 5px;
+    font-size: 7px;
+  }
+}

@@ -1,18 +1,39 @@
-
+import { useState } from "react";
 import "./App.css";
+
 import ClientPortal from "./pages/ClientPortal";
 import AIHub from "./pages/AIHub";
-
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
+import Disclaimer from "./pages/Disclaimer";
 function App() {
-  if (window.location.pathname === "/client-portal") {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+
+  if (path === "/client-portal") {
     return <ClientPortal />;
   }
 
-  if (window.location.pathname === "/ai-hub") {
+  if (path === "/ai-hub") {
     return <AIHub />;
   }
 
+  if (path === "/privacy-policy") {
+    return <PrivacyPolicy />;
+  }
+
+  if (path === "/terms-and-conditions") {
+    return <Terms />;
+  }
+
+  if (path === "/disclaimer") {
+    return <Disclaimer />;
+  }
+
   return (
+
+  
 
     <div className="site">
 
@@ -20,46 +41,55 @@ function App() {
           NAVBAR
       ========================= */}
 
-      <header className="navbar">
-        <div className="nav-inner">
+      
+<header className="navbar">
+  <div className="nav-inner">
+    <a href="#" className="logo" onClick={() => setMenuOpen(false)}>
+      ZELVIX MEDIA<span>.</span>
+    </a>
 
-          <a href="#" className="logo">
-            ZELVIX MEDIA<span>.</span>
-          </a>
+    <nav className={`nav-links ${menuOpen ? "mobile-open" : ""}`}>
+      <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+      <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+      <a href="#approach" onClick={() => setMenuOpen(false)}>Approach</a>
+      <a href="#ai-hub" onClick={() => setMenuOpen(false)}>AI Hub</a>
+      <a href="#websites" onClick={() => setMenuOpen(false)}>Websites</a>
+      <a href="/client-portal" onClick={() => setMenuOpen(false)}>Client Portal ↗</a>
+    </nav>
 
-          <nav className="nav-links">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#approach">Approach</a>
-            <a href="#ai-hub">AI Hub</a>
-            <a href="#websites">Websites</a>
-            <a href="/client-portal">Client Portal ↗</a>
-          </nav>
+    <div className="nav-socials">
+      <a
+        href="https://www.instagram.com/zelvixmedia_/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-social"
+      >
+        ZELVIX MEDIA <span>↗</span>
+      </a>
 
-          <div className="nav-socials">
+      <a
+        href="https://www.instagram.com/zayaan_zelvix/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-social"
+      >
+        ZAYAAN <span>↗</span>
+      </a>
+    </div>
 
-            <a
-              href="https://www.instagram.com/zelvixmedia_/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-social"
-            >
-              ZELVIX MEDIA <span>↗</span>
-            </a>
+    <button
+      type="button"
+      className={`mobile-menu-toggle ${menuOpen ? "is-open" : ""}`}
+      aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+      aria-expanded={menuOpen}
+      onClick={() => setMenuOpen(!menuOpen)}
+    >
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
 
-            <a
-              href="https://www.instagram.com/zayaan_zelvix/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav-social"
-            >
-              ZAYAAN <span>↗</span>
-            </a>
-
-          </div>
-
-        </div>
-      </header>
 
 
       {/* =========================
@@ -773,109 +803,77 @@ function App() {
           FOOTER
       ========================= */}
 
-      <footer className="footer">
+      
+<footer className="footer">
+  <div className="footer-top">
+    <div className="footer-brand">
+      <a href="/" className="footer-logo">
+        ZELVIX MEDIA<span>.</span>
+      </a>
 
-        <div className="footer-top">
+      <p>
+        Creative media for brands
+        <br />
+        ready to be noticed.
+      </p>
 
-          <div className="footer-brand">
+      <span className="footer-tagline">
+        CREATE • CAPTIVATE • GROW
+      </span>
+    </div>
 
-            <div className="footer-logo">
-              ZELVIX MEDIA<span>.</span>
-            </div>
+    <div className="footer-links">
+      <div className="footer-column">
+        <span className="footer-heading">EXPLORE</span>
+        <a href="/#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/#approach">Our Approach</a>
+        <a href="/#websites">Website Development</a>
+        <a href="/ai-hub">AI Hub ↗</a>
+        <a href="/client-portal">Client Portal ↗</a>
+      </div>
 
-            <p>
-              Creative media for brands
-              <br />
-              ready to be noticed.
-            </p>
+      <div className="footer-column">
+        <span className="footer-heading">CONNECT</span>
+        <a
+          href="https://www.instagram.com/zelvixmedia_/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram ↗
+        </a>
+        <a
+          href="https://www.instagram.com/zayaan_zelvix/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zayaan ↗
+        </a>
+        <a href="/#contact">Start a Project</a>
+        <a href="mailto:zelvixmedia2026@gmail.com">
+          Email Us ↗
+        </a>
+      </div>
 
-          </div>
+      <div className="footer-column">
+        <span className="footer-heading">LEGAL</span>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="/disclaimer">Disclaimer</a>
+      </div>
+    </div>
+  </div>
 
+  <div className="footer-line"></div>
 
-          <div className="footer-links">
+  <div className="footer-bottom">
+    <span>© 2026 ZELVIX MEDIA</span>
+    <span>MADE FOR THE DIGITAL WORLD</span>
+    <span>INDIA</span>
+  </div>
+</footer>
 
-            <div className="footer-column">
-
-              <span className="footer-heading">
-                EXPLORE
-              </span>
-
-              <a href="#about">
-                About
-              </a>
-
-              <a href="#services">
-                Services
-              </a>
-
-              <a href="#approach">
-                Approach
-              </a>
-
-              <a href="#ai-hub">
-                AI Hub
-              </a>
-
-            </div>
-
-
-            <div className="footer-column">
-
-              <span className="footer-heading">
-                CONNECT
-              </span>
-
-              <a
-                href="https://www.instagram.com/zelvixmedia_/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram ↗
-              </a>
-
-              <a
-                href="https://www.instagram.com/zayaan_zelvix/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Zayaan ↗
-              </a>
-
-              <a href="#contact">
-                Start a Project ↗
-              </a>
-
-              <a href="mailto:zelvixmedia2026@gmail.com">
-                Email Zelvix ↗
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div className="footer-line"></div>
-
-
-        <div className="footer-bottom">
-
-          <span>
-            © 2026 ZELVIX MEDIA
-          </span>
-
-          <span>
-            CREATE • CAPTIVATE • GROW
-          </span>
-
-          <span>
-            INDIA
-          </span>
-
-        </div>
-
-      </footer>
+     
 
     </div>
   );

@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import AIHub from "./pages/AIHub.jsx";
 
+
 const path = window.location.pathname;
 
 const Page = path === "/ai-hub" ? AIHub : App;
