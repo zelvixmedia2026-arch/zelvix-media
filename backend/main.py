@@ -1,8 +1,13 @@
-
 import os
-from fastapi import Header, HTTPException
-from fastapi.responses import StreamingResponse
-from vercel.blob import AsyncBlobClient
+from pathlib import Path
+
+from fastapi import FastAPI, Header, HTTPException
+from fastapi.responses import FileResponse
+
+app = FastAPI()
+
+BASE_DIR = Path(__file__).resolve().parent
+VIDEO_PATH = BASE_DIR / "videos" / "travel-video.mp4"
 
 
 @app.get("/api/client-video")
@@ -12,21 +17,14 @@ async def client_video(x_client_pin: str = Header(default="")):
     if not expected_pin or x_client_pin != expected_pin:
         raise HTTPException(status_code=401, detail="Unauthorized")
 
-    client = AsyncBlobClient()
-    result = await client.get(
-        "travel 2 updted.mp4",
-        access="private",
-    )
-
-    if result is None or result.status_code != 200 or result.stream is None:
+    if not VIDEO_PATH.is_file():
         raise HTTPException(status_code=404, detail="Video not found")
 
-    return StreamingResponse(
-        result.stream,
-        media_type=result.blob.content_type or "video/mp4",
+    return FileResponse(
+        VIDEO_PATH,
+        media_type="video/mp4",
         headers={
             "Content-Disposition": 'inline; filename="travel-video.mp4"',
             "Cache-Control": "private, no-store",
-            "Accept-Ranges": "none",
         },
     )
