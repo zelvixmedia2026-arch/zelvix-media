@@ -12,14 +12,13 @@ export default function ClientPortal() {
     event.preventDefault();
 
     const enteredPin = pin.trim();
+    const client = clients[enteredPin];
 
     if (!enteredPin) {
       setError("Please enter your client PIN.");
       setClientData(null);
       return;
     }
-
-    const client = clients[enteredPin];
 
     if (client) {
       setClientData(client);
@@ -36,6 +35,7 @@ export default function ClientPortal() {
         <a className="portal-brand" href="/">
           ZELVIX <span>MEDIA.</span>
         </a>
+
         <a className="portal-home" href="/">
           Back to website ↗
         </a>
@@ -92,26 +92,34 @@ export default function ClientPortal() {
             <p>Your videos are ready.</p>
 
             {clientData.videos.map((video) => (
-              <article className="client-video-card" key={video.videoNumber}>
+              <article
+                className="client-video-card"
+                key={video.videoNumber}
+              >
                 <p>VIDEO NO. {video.videoNumber}</p>
                 <h3>{video.title}</h3>
                 <p>{video.description}</p>
 
-                {video.videoUrl.startsWith("https://") &&
-                !video.videoUrl.includes("PASTE_BLOB_VIDEO_URL_HERE") ? (
+                {video.videoUrl ? (
                   <>
                     <video
                       controls
+                      playsInline
                       preload="metadata"
                       width="100%"
                       src={video.videoUrl}
-                    />
-                    <a
-                      href={video.videoUrl}
-                      target="_blank"
-                      rel="noreferrer"
                     >
-                      Open / Download Video ↗
+                      Your browser does not support video playback.
+                    </video>
+
+                    <a
+                      className="video-download-button"
+                      href={video.videoUrl}
+                      download={
+                        video.fileName || "zelvix-media-video.mp4"
+                      }
+                    >
+                      Download Original Video ↓
                     </a>
                   </>
                 ) : (

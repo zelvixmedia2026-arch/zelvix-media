@@ -1,130 +1,32 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-import json
-from pathlib import Path
+
+import os
+from fastapi import Header, HTTPException
+from fastapi.responses import StreamingResponse
+from vercel.blob import AsyncBlobClient
 
 
-app = FastAPI(title="Zelvix AI Hub API")
+@app.get("/api/client-video")
+async def client_video(x_client_pin: str = Header(default="")):
+    expected_pin = os.getenv("TRAVEL_VIBE_PIN")
 
+    if not expected_pin or x_client_pin != expected_pin:
+        raise HTTPException(status_code=401, detail="Unauthorized")
 
-# ==========================================
-# CORS
-# ==========================================
+    client = AsyncBlobClient()
+    result = await client.get(
+        "travel 2 updted.mp4",
+        access="private",
+    )
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+    if result is None or result.status_code != 200 or result.stream is None:
+        raise HTTPException(status_code=404, detail="Video not found")
 
-
-# ==========================================
-# REELS DATABASE
-# ==========================================
-
-BASE_DIR = Path(__file__).resolve().parent
-REELS_FILE = BASE_DIR / "reels.json"
-
-
-def load_reels():
-
-    if not REELS_FILE.exists():
-        return []
-
-    try:
-        with open(REELS_FILE, "r", encoding="utf-8") as file:
-            return json.load(file)
-
-    except (json.JSONDecodeError, OSError):
-
-        return []
-
-
-# ==========================================
-# NORMALIZE URL
-# ==========================================
-
-def normalize_url(url: str):
-
-    return url.strip().rstrip("/")
-
-
-# ==========================================
-# HOME
-# ==========================================
-
-@app.get("/")
-def home():
-
-    return {
-        "status": "online",
-        "service": "Zelvix AI Hub API"
-    }
-
-
-# ==========================================
-# ANALYZE REEL
-# ==========================================
-
-@app.post("/api/analyze")
-def analyze_reel(data: dict):
-
-    reel_url = data.get("url", "").strip()
-
-    # --------------------------------------
-    # Check URL
-    # --------------------------------------
-
-    if not reel_url:
-
-        return {
-            "success": False,
-            "error": "Please paste an Instagram Reel link."
-        }
-
-
-    # --------------------------------------
-    # Normalize user URL
-    # --------------------------------------
-
-    user_url = normalize_url(reel_url)
-
-
-    # --------------------------------------
-    # Load reels
-    # --------------------------------------
-
-    reels = load_reels()
-
-
-    # --------------------------------------
-    # Find matching Reel
-    # --------------------------------------
-
-    for reel in reels:
-
-        stored_url = normalize_url(
-            reel.get("reel_url", "")
-        )
-
-        if stored_url == user_url:
-
-            return {
-                "success": True,
-                "data": reel
-            }
-
-
-    # --------------------------------------
-    # Reel not found
-    # --------------------------------------
-
-    return {
-        "success": False,
-        "error": "This Reel hasn't been added to Zelvix AI Hub yet."
-    }
+    return StreamingResponse(
+        result.stream,
+        media_type=result.blob.content_type or "video/mp4",
+        headers={
+            "Content-Disposition": 'inline; filename="travel-video.mp4"',
+            "Cache-Control": "private, no-store",
+            "Accept-Ranges": "none",
+        },
+    )
