@@ -1,301 +1,341 @@
 
 import "./Legal.css";
 
-export default function PrivacyPolicy() {
+export default function LegalPolicies() {
   return (
     <main className="legal-page">
       <a href="/" className="legal-back">← Back to Zelvix Media</a>
 
       <p className="legal-label">LEGAL INFORMATION</p>
-      <h1>Privacy Policy</h1>
-      <p className="legal-updated">Last updated: November 08, 2026</p>
+      <h1>ZELVIX MEDIA</h1>
+      <h2>LEGAL POLICIES, TERMS &amp; CONDITIONS</h2>
+      <p className="legal-updated">Last Updated: 08 November 2026</p>
 
       <p>
-        ZELVIX MEDIA ("we", "our", or "us") respects your privacy.
-        This Privacy Policy explains how personal information may be
-        collected, used, stored and protected when you visit
-        zelvixmedia.online, contact us or use our digital services.
+        ZELVIX MEDIA is an independent website design, development and digital
+        services provider operating under its trade name.
       </p>
 
       <p>
-        We aim to handle personal information responsibly and in
-        accordance with applicable Indian data protection and privacy
-        laws.
+        These policies explain the nature of our services, our responsibilities,
+        limitations, privacy practices and the terms governing the use of our
+        website.
       </p>
 
-      <h2>1. Information We May Collect</h2>
       <p>
-        Depending on how you interact with us, we may collect or
-        receive the following information:
+        By accessing this website or engaging our services, you acknowledge the
+        applicable terms described below.
       </p>
+
+      <h2>1. ABOUT ZELVIX MEDIA</h2>
+      <p>
+        ZELVIX MEDIA provides website design, website development and related
+        digital services to individuals, businesses and organizations.
+      </p>
+      <p>Our services may include:</p>
       <ul>
-        <li>Name and contact details.</li>
-        <li>Email address and telephone number.</li>
-        <li>Business name and project requirements.</li>
-        <li>Messages, enquiries and feedback you send us.</li>
-        <li>Logos, photographs, videos and files provided for projects.</li>
-        <li>Payment-related confirmation or transaction details, where applicable.</li>
+        <li>Static website design and development.</li>
+        <li>Business website creation.</li>
+        <li>Responsive website design.</li>
+        <li>WhatsApp and contact integrations.</li>
+        <li>Website deployment.</li>
+        <li>Basic SEO services.</li>
+        <li>Website maintenance, where separately agreed.</li>
       </ul>
       <p>
-        Our hosting provider and website infrastructure may also
-        process technical information such as IP addresses, browser
-        type, device information, access times and server logs for
-        website operation, security and troubleshooting.
-      </p>
-      <p>
-        We do not intentionally request sensitive personal
-        information unless it is genuinely necessary for a specific
-        purpose and permitted by applicable law.
+        ZELVIX MEDIA operates as an independent service provider and does not
+        automatically become a partner, employee, representative or operator
+        of any client's business.
       </p>
 
-      <h2>2. How We Collect Information</h2>
-      <p>Information may be received when you:</p>
+      <h2>2. SCOPE OF OUR RESPONSIBILITY</h2>
+      <p>
+        Our responsibility is limited to the digital services specifically
+        agreed upon with the client.
+      </p>
+      <p>
+        We make reasonable efforts to provide functional, professional and
+        reliable website development services.
+      </p>
+      <p>Unless expressly agreed otherwise in writing, ZELVIX MEDIA does not:</p>
       <ul>
-        <li>Submit an enquiry through our website.</li>
-        <li>Contact us by email, telephone or messaging platforms.</li>
-        <li>Request a quotation or discuss a project.</li>
-        <li>Provide files or information for website development.</li>
-        <li>Interact with our website and its technical services.</li>
+        <li>Operate or manage client businesses.</li>
+        <li>Handle client business transactions.</li>
+        <li>Manage employees or contractors.</li>
+        <li>Provide transportation or delivery services.</li>
+        <li>Assign drivers or other service providers.</li>
+        <li>Manage customer bookings or reservations.</li>
+        <li>Collect customer payments on behalf of clients.</li>
+        <li>Supervise products or services offered by clients.</li>
+        <li>Guarantee sales, revenue, business growth or search rankings.</li>
+      </ul>
+
+      <h2>3. CLIENT RESPONSIBILITIES</h2>
+      <p>
+        Every client is independently responsible for the operation and
+        management of their own business.
+      </p>
+      <p>Clients are responsible for:</p>
+      <ul>
+        <li>Business registrations and applicable licences.</li>
+        <li>Legal compliance and regulatory permissions.</li>
+        <li>Accuracy of business information.</li>
+        <li>Products and services advertised.</li>
+        <li>Employees and contractors.</li>
+        <li>Customer enquiries and complaints.</li>
+        <li>Payments, refunds and transactions.</li>
+        <li>Customer safety and service delivery.</li>
+        <li>Permissions for photographs, logos and other supplied materials.</li>
       </ul>
       <p>
-        We may also receive limited technical information
-        automatically through hosting providers or other services
-        used to operate our website.
+        Clients must ensure that all information provided for publication is
+        accurate, lawful and authorized.
+      </p>
+      <p>
+        ZELVIX MEDIA reserves the right to refuse or remove content that it
+        reasonably believes is unlawful, fraudulent, misleading or infringes
+        third-party rights.
       </p>
 
-      <h2>3. How We Use Information</h2>
+      <h2>4. THIRD-PARTY COMMUNICATION AND SERVICES</h2>
+      <p>
+        Websites developed by ZELVIX MEDIA may contain external links, including:
+      </p>
+      <ul>
+        <li>WhatsApp.</li>
+        <li>Telephone calling links.</li>
+        <li>Email links.</li>
+        <li>Google Maps.</li>
+        <li>Social media platforms.</li>
+        <li>External booking or service platforms.</li>
+      </ul>
+      <p>
+        When a visitor clicks an external contact link, communication may take
+        place directly between the visitor and the respective business or
+        third-party platform.
+      </p>
+      <p>
+        ZELVIX MEDIA does not automatically participate in or control these
+        communications.
+      </p>
+      <p>
+        External platforms operate independently and are governed by their own
+        terms, policies and privacy practices.
+      </p>
+
+      <h2>5. LIMITATION OF RESPONSIBILITY</h2>
+      <p>
+        ZELVIX MEDIA is an independent website development service provider and
+        does not control the independent business activities of its clients.
+      </p>
+      <p>
+        To the extent permitted by applicable law, ZELVIX MEDIA shall not be
+        responsible for incidents arising solely from:
+      </p>
+      <ul>
+        <li>Client business operations.</li>
+        <li>Products or services supplied by clients.</li>
+        <li>Actions or misconduct of client employees or contractors.</li>
+        <li>Transportation or delivery activities.</li>
+        <li>Customer booking disputes.</li>
+        <li>Business transactions conducted directly between clients and customers.</li>
+        <li>Incorrect information supplied or approved by clients.</li>
+        <li>Independent actions of third-party platforms.</li>
+      </ul>
+      <p>
+        For example, where a customer contacts a travel company through a
+        WhatsApp link on a website, the travel company remains responsible for
+        its own booking arrangements, drivers, vehicles and transportation
+        services.
+      </p>
+      <p>
+        ZELVIX MEDIA does not assume responsibility merely because the customer
+        discovered or contacted the business through a website developed by us.
+      </p>
+      <p>
+        Nothing in this policy excludes liability for our own negligence,
+        fraud, misconduct, breach of legal obligations or any liability that
+        cannot legally be excluded.
+      </p>
+
+      <h2>6. WEBSITE SECURITY AND AVAILABILITY</h2>
+      <p>
+        We take reasonable technical precautions when developing websites.
+      </p>
+      <p>
+        However, uninterrupted website availability and complete protection
+        against all cyber threats cannot be guaranteed.
+      </p>
+      <p>We are not responsible for independent failures or actions of:</p>
+      <ul>
+        <li>Hosting providers.</li>
+        <li>Domain registrars.</li>
+        <li>Internet service providers.</li>
+        <li>Third-party software providers.</li>
+        <li>External APIs and integrations.</li>
+        <li>Social media or communication platforms.</li>
+      </ul>
+      <p>
+        Clients are responsible for maintaining control of their accounts,
+        passwords and business credentials.
+      </p>
+
+      <h2>7. PRIVACY POLICY</h2>
+      <p>
+        We respect the privacy of individuals who visit our website or contact
+        ZELVIX MEDIA.
+      </p>
+
+      <h3>Information We May Collect</h3>
+      <p>Depending on how you contact us, we may receive:</p>
+      <ul>
+        <li>Name.</li>
+        <li>Phone number.</li>
+        <li>Email address.</li>
+        <li>Business name.</li>
+        <li>Project requirements.</li>
+        <li>Enquiry details.</li>
+        <li>Information voluntarily provided during communication.</li>
+      </ul>
+      <p>
+        Our hosting provider may also process technical information such as IP
+        addresses and server logs.
+      </p>
+
+      <h3>How We Use Information</h3>
       <p>Information may be used to:</p>
       <ul>
-        <li>Respond to enquiries and messages.</li>
-        <li>Prepare quotations and understand project requirements.</li>
-        <li>Provide website development and other agreed services.</li>
-        <li>Communicate about ongoing projects and deliverables.</li>
-        <li>Maintain, troubleshoot and improve our website.</li>
-        <li>Protect against spam, fraud and unauthorized access.</li>
-        <li>Maintain business records and meet legal obligations.</li>
+        <li>Respond to enquiries.</li>
+        <li>Prepare quotations.</li>
+        <li>Discuss projects.</li>
+        <li>Provide development services.</li>
+        <li>Communicate with clients.</li>
+        <li>Process payments and maintain records.</li>
+        <li>Provide agreed technical support.</li>
+        <li>Meet applicable legal obligations.</li>
       </ul>
+
+      <h3>Information Sharing</h3>
       <p>
-        We do not intend to use personal information for purposes
-        unrelated to the reason it was collected, unless permitted
-        or required by applicable law.
+        We do not sell personal information.
+      </p>
+      <p>
+        Information may be shared with relevant service providers when
+        reasonably necessary to operate our business or deliver our services,
+        or when required by law.
       </p>
 
-      <h2>4. WhatsApp and External Communication</h2>
+      <h3>Data Security</h3>
       <p>
-        Our website may contain WhatsApp, email, telephone or other
-        contact links. When you select one of these links, you may
-        be redirected to an external service.
+        We take reasonable measures to protect information entrusted to us.
       </p>
       <p>
-        Communications through WhatsApp and other external platforms
-        are governed by the respective platform's privacy policies
-        and terms.
-      </p>
-      <p>
-        If a website developed by ZELVIX MEDIA contains a client's
-        WhatsApp or contact button, messages sent through that
-        button are generally directed to the respective business
-        or contact selected by the visitor.
-      </p>
-      <p>
-        ZELVIX MEDIA does not automatically receive or control
-        private conversations between visitors and independent
-        client businesses.
+        However, no online communication or electronic storage system can be
+        guaranteed to be completely secure.
       </p>
 
-      <h2>5. Cookies and Similar Technologies</h2>
+      <h3>Data Retention</h3>
       <p>
-        Our website or its hosting and third-party services may
-        use cookies or similar technologies to support website
-        functionality, security and performance.
-      </p>
-      <p>
-        If analytics or advertising tools are enabled, they may
-        use cookies or similar technologies to measure website
-        usage or advertising performance, subject to applicable
-        consent requirements and available user settings.
-      </p>
-      <p>
-        You can manage cookies through your browser settings.
-        Disabling certain cookies may affect some website
-        functionality.
+        Information is retained only for as long as reasonably necessary for
+        business, contractual and legal purposes.
       </p>
 
-      <h2>6. Third-Party Services</h2>
+      <h3>Privacy Requests</h3>
       <p>
-        We may use third-party providers to operate and support
-        our website and services, including:
-      </p>
-      <ul>
-        <li>Website hosting and infrastructure providers.</li>
-        <li>Domain registration services.</li>
-        <li>Email and communication services.</li>
-        <li>WhatsApp and other messaging platforms.</li>
-        <li>Google Maps and other Google services.</li>
-        <li>Analytics and website performance tools.</li>
-        <li>Payment or other service providers, where applicable.</li>
-      </ul>
-      <p>
-        These providers may process information according to their
-        own privacy policies, contractual arrangements and
-        applicable laws.
-      </p>
-      <p>
-        ZELVIX MEDIA does not control the independent privacy,
-        security or data-handling practices of external platforms.
-        We encourage users to review the privacy policies of
-        services they access.
+        Individuals may contact us to request access, correction or deletion
+        of personal information, subject to applicable law and legitimate
+        retention requirements.
       </p>
 
-      <h2>7. Advertising and Analytics</h2>
+      <h3>External Links</h3>
       <p>
-        We may use website analytics or advertising services now
-        or in the future. If services such as Google Analytics
-        or Google AdSense are enabled, they may collect or process
-        certain usage and technical information through cookies
-        or similar technologies.
-      </p>
-      <p>
-        Such services operate under their own policies and
-        applicable consent requirements. We will make reasonable
-        efforts to update this policy if our use of these services
-        changes.
+        Our website may redirect visitors to third-party websites or
+        communication platforms. Their privacy practices are independently
+        governed by their respective policies.
       </p>
 
-      <h2>8. Sharing of Information</h2>
+      <h2>8. INTELLECTUAL PROPERTY</h2>
       <p>
-        We do not sell personal information to third parties.
-        Information may be shared only where reasonably necessary,
-        such as:
+        The ZELVIX MEDIA name, branding, original designs and proprietary
+        materials may not be copied, reproduced or commercially used without
+        authorization.
       </p>
-      <ul>
-        <li>With service providers supporting our website or work.</li>
-        <li>When required to provide a service you requested.</li>
-        <li>When you authorize or request the sharing.</li>
-        <li>When disclosure is required by applicable law or a lawful order.</li>
-        <li>When reasonably necessary to protect rights, safety or security.</li>
-      </ul>
       <p>
-        We aim to limit information shared to what is reasonably
-        necessary for the relevant purpose.
+        Client-specific deliverables and third-party materials are subject to
+        their respective ownership arrangements and applicable licences.
+      </p>
+      <p>
+        Ownership of commissioned website deliverables shall be determined by
+        the relevant project quotation or written agreement.
       </p>
 
-      <h2>9. Client Project Information</h2>
+      <h2>9. PAYMENTS AND PROJECT TERMS</h2>
       <p>
-        During website development and other digital projects,
-        clients may provide business information, contact details,
-        photographs, logos, documents and other materials.
+        Project prices, payment schedules, delivery timelines, revision limits
+        and maintenance services shall be communicated separately through
+        quotations or written communication.
       </p>
       <p>
-        Such information is used for the agreed project, related
-        communication and necessary service delivery.
+        Additional work outside the agreed project scope may attract additional
+        charges.
       </p>
       <p>
-        Clients are responsible for ensuring that they have the
-        necessary authority and permissions to provide personal
-        information or other materials belonging to third parties.
-      </p>
-      <p>
-        Where ZELVIX MEDIA processes personal information on behalf
-        of a client, the responsibilities of each party depend on
-        the nature of the processing and applicable legal
-        requirements.
+        Work may be paused where agreed payments are overdue, subject to
+        applicable law and agreed terms.
       </p>
 
-      <h2>10. Data Retention</h2>
+      <h2>10. NON-DISCRIMINATION AND PROFESSIONAL CONDUCT</h2>
       <p>
-        We retain personal information only for as long as
-        reasonably necessary for the purpose for which it was
-        collected, including project communication, service
-        delivery, business records and legal obligations.
+        ZELVIX MEDIA is committed to fair, respectful and professional
+        business relationships.
       </p>
       <p>
-        When information is no longer required, we will take
-        reasonable steps to delete it or otherwise handle it
-        appropriately, subject to applicable legal requirements
-        and legitimate record-keeping needs.
-      </p>
-
-      <h2>11. Data Security</h2>
-      <p>
-        We take reasonable technical and organizational steps
-        to protect information against unauthorized access,
-        misuse, alteration, disclosure or loss.
+        We do not support unlawful discrimination, harassment, intimidation,
+        threats or abusive conduct.
       </p>
       <p>
-        However, no website, internet transmission, email service
-        or digital storage system can be guaranteed to be
-        completely secure. Users should avoid sending passwords,
-        banking credentials or unnecessary sensitive information
-        through ordinary contact forms or messages.
+        Clients and business partners are expected to maintain respectful
+        professional communication.
       </p>
 
-      <h2>12. Your Privacy Rights and Choices</h2>
+      <h2>11. CLIENT INDEMNIFICATION</h2>
       <p>
-        Subject to applicable law, you may have rights to:
-      </p>
-      <ul>
-        <li>Request information about personal data we hold about you.</li>
-        <li>Request correction of inaccurate or incomplete information.</li>
-        <li>Request deletion of personal information where legally applicable.</li>
-        <li>Withdraw consent where processing is based on consent.</li>
-        <li>Raise a privacy-related concern or grievance.</li>
-      </ul>
-      <p>
-        To make a privacy request, contact us using the email
-        address provided below. We may need to verify your identity
-        before responding. Requests will be handled in accordance
-        with applicable law.
-      </p>
-
-      <h2>13. Children's Privacy</h2>
-      <p>
-        Our website and services are not intended to knowingly
-        collect personal information from children in violation
-        of applicable law.
+        To the extent permitted by law, clients are responsible for claims
+        arising from their own business operations, unlawful activities,
+        products, services, supplied content or misconduct of their personnel.
       </p>
       <p>
-        If you believe that a child has provided personal
-        information improperly, please contact us so that we
-        can review the matter and take appropriate action.
+        Where a client's actions or supplied materials cause a third-party
+        claim against ZELVIX MEDIA, the client may be responsible for resulting
+        losses and reasonable legal expenses to the extent legally attributable
+        to the client.
+      </p>
+      <p>
+        This does not cover liability caused by ZELVIX MEDIA's own negligence,
+        misconduct or breach of legal obligations.
       </p>
 
-      <h2>14. External Websites</h2>
+      <h2>12. CHANGES TO THESE POLICIES</h2>
       <p>
-        Our website may contain links to external websites,
-        social media pages or other online services. We are
-        not responsible for the privacy practices, content
-        or security of those external websites.
+        ZELVIX MEDIA reserves the right to update these policies when necessary
+        to reflect changes in services, business practices or applicable laws.
       </p>
       <p>
-        Visiting an external website is subject to that
-        website's own terms and privacy policy.
+        Updated policies will be published on this website with a revised
+        effective date.
       </p>
 
-      <h2>15. Changes to This Privacy Policy</h2>
+      <h2>13. GOVERNING LAW</h2>
       <p>
-        We may update this Privacy Policy when our website,
-        services, technology or legal obligations change.
-        The latest version will be published on this page
-        with an updated date.
+        These policies are governed by the laws of India.
       </p>
       <p>
-        We encourage visitors to review this page periodically.
-      </p>
-
-      <h2>16. Contact and Privacy Requests</h2>
-      <p>
-        If you have questions, concerns or requests relating
-        to this Privacy Policy or your personal information,
-        please contact:
+        Any disputes shall be handled by courts having appropriate jurisdiction
+        under applicable Indian law.
       </p>
       <p>
-        <strong>ZELVIX MEDIA</strong>
-        <br />
-        Email:{" "}
-        <a href="mailto:zelvixmedia2026@gmail.com">
-          zelvixmedia2026@gmail.com
-        </a>
+        Nothing in these policies removes any statutory rights or remedies
+        available to individuals or businesses.
       </p>
 
       <hr />
@@ -303,7 +343,7 @@ export default function PrivacyPolicy() {
       <p>
         <strong>ZELVIX MEDIA</strong>
         <br />
-        Independent Digital Design &amp; Development Services.
+        Independent Website Design &amp; Development Services.
         <br />
         © 2026 ZELVIX MEDIA. All Rights Reserved.
       </p>
